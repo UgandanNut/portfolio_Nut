@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body id="body">
+    <div class="porttitle">
+    <p>UgandanNut's portfolio</p>
+    </div>
+
+    <div class="about">
+        <p onclick="aboutpress()" id="about">ABOUT ME</p>
+    </div>
+
+    <div class="Amsg">
+        <p id="Amsg">i'm a UI/UX, web developer with 2 years of experience (experienced with html,css,javascript).
+            dm me for job request. payment using paypall.
+            (this portfolio might be wanky on mobile cuz i havent given it a mobile support so i recommend on using 
+            PC/Laptop to access this portfolio)
+        </p>
+    </div>
+
+    <div class="Aback">
+        <p id="Aback" onclick="backpress()">BACK</p>
+    </div>
+
+    <div class="text1">
+    <p id="text1">BitCave</p>
+    </div>
+
+    <div class="img1">
+    <img onclick="imgpress1()" id="img1" height="300px" width="300px" src="port_bitCave.PNG"></h1>
+    </div>
+
+    <div class="text2">
+    <p id="text2">Event invitation</p>
+    </div>
+
+    <div class="img2">
+    <img onclick="imgpress2()" id="img2" height="300px" width="300px" src="port_KK.PNG">
+    </div>
+
+    <div class="chest1">
+        <img onclick="chest1click()" id="chest1" src="chest1.png">
+    </div>
+
+    <div class="chest2">
+        <img id="chest2" src="chest2.png">
+    </div>
+
+    <div class="arrow">
+        <img id="arrow" src="arrow.gif">
+    </div>
+
+    <div class="chestmsg1">
+        <p id="Cmsg1">PRESS FOR A SUPRISE</p>
+    </div>
+
+    <div class="chestmsg2">
+        <p id="Cmsg2">DISCORD TAG: UgandanNut#3718
+            (Contact me!)
+        </p>
+    </div>
+
+
+    <style>
+        *{
+        font-family:'Permanent Marker', cursive;
+        }
+        
+        .porttitle p{
+            margin-left: 43%;
+        }
+        
+        
+        body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #000000, #333333, #666666);
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        }
+
+
+        .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+        background-color: #333333;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .content {
+        padding: 20px;
+        }
+
+        .footer {
+        background-color: #333333; /* Dark gray footer background */
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .about p{
+        position: absolute;
+        margin-left: 0px;
+        font-size: 25px;
+        }
+
+        .about{
+        border-style: outset;
+        border-left-color: white;
+        border-right-color: rgb(43, 42, 42);
+        border-top-color: white;
+        border-bottom-color:rgb(43, 42, 42);
+        border-radius: 20%;
+        margin-left: 45%;
+        width: 140px;
+        height: 90px;
+        }
+        
+        .Amsg p{
+        margin-left: 0px;
+        font-size: 25px;
+        border-style: outset;
+        border-left-color: white;
+        border-right-color: rgb(43, 42, 42);
+        border-top-color: white;
+        border-bottom-color:rgb(43, 42, 42);
+        border-radius: 5%;
+        
+        }
+
+       .Aback p{
+        border-style: outset;
+        border-left-color: white;
+        border-right-color: rgb(43, 42, 42);
+        border-top-color: white;
+        border-bottom-color:rgb(43, 42, 42);
+        border-radius: 20%;
+        margin-left: 48%;
+        width: 70px;
+        height: 50px;
+        font-size: 25px;
+        
+       }
+        
+
+        .text1 p{
+        color: white;
+        position: absolute;
+        top: 240px;
+        left: 100px;
+        }
+        .text2 p{
+        color: white;
+        position: absolute;
+        top: 240px;
+         right: 325px;
+        }
+        .img1{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        }
+
+        .img1 img{
+        border-style: outset;
+        border-left-color: grey;
+        border-right-color: rgb(43, 42, 42);
+        border-top-color: grey;
+        border-bottom-color:rgb(43, 42, 42);
+        border-width: 5px;
+        border-radius: 20%;
+        }
+
+        
+        .img2{
+        position: absolute;
+        top: 100px;
+         right: 60px;
+        }
+
+        .img2 img{
+        border-style: outset;
+        border-left-color: orangered;
+        border-right-color: gold;
+        border-top-color: orangered;
+        border-bottom-color: gold;
+        border-width: 5px;
+        
+        border-radius: 20%;
+        }
+
+        .chest1 img{
+            position: absolute;
+            top: 58%;
+            right: 41%;
+        }
+
+        .chest2 img{
+            position: absolute;
+            top: 40%;
+            right: 40%;
+        }
+
+        
+        .arrow img{
+            position: absolute;
+            top: 15%;
+            right: 38%;
+        }
+
+        .chestmsg1 p{
+            position: absolute;
+            top: 50%;
+            right: 44%;
+        }
+
+        .chestmsg2 p{
+            position: absolute;
+            top: 40%;
+            right: 38%;
+        }
+
+    </style>
+
+
+
+
+    <script>
+        //about msg
+        var Amsg = document.getElementById("Amsg")
+        Amsg.style.display = "none"
+        
+        var Aback = document.getElementById("Aback")
+        Aback.style.display = "none"
+        //
+
+
+
+        //about
+        var about = document.getElementById("about")
+        
+        about.addEventListener("mouseover", function(){
+        about.style.opacity = "20%"
+        });
+
+        about.addEventListener("mouseout", function(){
+        about.style.opacity = "100%"
+        });
+
+        //
+
+
+
+
+        //chest
+        var Cmsg2 = document.getElementById("Cmsg2")
+        var chest2 = document.getElementById("chest2")
+        chest2.style.display = "none"
+        Cmsg2.style.display = "none"
+        function chest1click(){
+        var Cmsg1 = document.getElementById("Cmsg1")
+        var Cmsg2 = document.getElementById("Cmsg2")
+        var arrow = document.getElementById("arrow")
+        var chest1 = document.getElementById("chest1")
+        var chest2 = document.getElementById("chest2")
+        chest1.style.opacity = "0%"
+        chest2.style.display = "block"
+        arrow.style.display = "none"
+        Cmsg1.style.display = "none"
+        Cmsg2.style.display = "block"
+        }
+
+        //
+      
+
+        //text
+        var text1 = document.getElementById("text1")
+        text1.style.opacity = "0%";
+
+        var text2 = document.getElementById("text2")
+        text2.style.display = "none";
+        //
+
+        //img1
+        var img1 = document.getElementById("img1")
+        img1.style.marginright = "20%";
+
+        img1.addEventListener("mouseover", function() {
+        img1.style.opacity = "20%";
+        img1.style.marginLeft = "20%";
+        text1.style.opacity = "100%";
+        });
+
+
+        img1.addEventListener("mouseout", function() {
+            img1.style.opacity = "100%";
+            img1.style.marginLeft = "0%";
+            text1.style.opacity = "0%";
+         });
+       
+       function imgpress1(){
+        window.location.href = "https://ugandannut.github.io/bitcavee/index.html"
+       }
+
+       //
+
+
+       //img2
+        var img2 = document.getElementById("img2")
+        img2.style.marginright = "20%";
+
+        img2.addEventListener("mouseover", function() {
+        img2.style.opacity = "20%";
+        img2.style.marginLeft = "15%";
+        text2.style.display = "block";
+        
+        });
+
+
+        img2.addEventListener("mouseout", function() {
+            img2.style.opacity = "100%";
+            img2.style.marginLeft = "0%";
+            text2.style.display = "none";
+         });
+       
+       function imgpress2(){
+        window.location.href = "https://ugandannut.github.io/KALAMKUDUS-FORUM-IMLEK_/"
+       }
+        //
+
+
+        //about click
+        function aboutpress(){
+            var arrow = document.getElementById("arrow")
+            var img1 = document.getElementById("img1")
+            var img2 = document.getElementById("img2")
+            var text1 = document.getElementById("text1")
+            var text2 = document.getElementById("text2")
+            var chest1 = document.getElementById("chest1")
+            var chest2 = document.getElementById("chest2")
+            var Cmsg1 = document.getElementById("Cmsg1")
+            var Cmsg2 = document.getElementById("Cmsg2")
+            var Amsg = document.getElementById("Amsg")
+            var Aback = document.getElementById("Aback")
+        
+            
+            img1.style.display = "none"
+            img2.style.display = "none"
+            text1.style.display = "none"
+            text2.style.display = "none"
+            chest1.style.display = "none"
+            chest2.style.display = "none"
+            arrow.style.display = "none"
+            Cmsg1.style.display = "none"
+            Cmsg2.style.display = "none"
+            //
+           Aback.style.display = "block"
+            Amsg.style.display = "block"
+        }
+        // about back
+        var Aback = document.getElementById("Aback")
+
+        Aback.addEventListener("mouseover",function(){
+            Aback.style.opacity = "20%"
+        })
+
+        Aback.addEventListener("mouseout",function(){
+            Aback.style.opacity = "100%"
+        })
+
+
+        function backpress(){
+            var arrow = document.getElementById("arrow")
+            var img1 = document.getElementById("img1")
+            var img2 = document.getElementById("img2")
+            var text1 = document.getElementById("text1")
+            var text2 = document.getElementById("text2")
+            var chest1 = document.getElementById("chest1")
+            var chest2 = document.getElementById("chest2")
+            var Cmsg1 = document.getElementById("Cmsg1")
+            var Cmsg2 = document.getElementById("Cmsg2")
+            var Amsg = document.getElementById("Amsg")
+            var Aback = document.getElementById("Aback")
+
+            img1.style.display = "block"
+            img2.style.display = "block"
+            chest1.style.display = "block"
+            arrow.style.display = "block"
+            Cmsg1.style.display = "block"
+            text1.style.display = "block"
+            chest1.style.opacity = "100%"
+            //
+           Aback.style.display = "none"
+            Amsg.style.display = "none"
+
+        }
+
+
+    </script>
+</body>
+</html>
